@@ -63,15 +63,16 @@
                             <tr><td>4</td> <td>*</td></tr></table>
             <p>
             Let's consider horizontal index as <b>i</b> and vertical index as <b>j</b>. So we need two loops which are nested. Loop with i to go line by line and Loop with j to print the * at [i][j] position in the matrix.
-            If we look at relation between i and j, it is clear that * needs to be printed untill j<=(n-i) holds true, where n is the length of * in first line. ie here n=4.
+            If we look at relation between i and j, it is clear that * needs to be printed untill <b>j<=(n-i)</b> holds true, where n is the length of * in first line. ie here n=4.
             Let's check for a few iterations. <br>
             <br>
-            When i=0, j=0 to 4 => Print * untill 0<=4 => ***** <br>
-            When i=1, j=0 to 3 => Print * untill 0<=3 =>  **** <br>
-            When i=2, j=0 to 2 => Print * untill 0<=2 => *** <br>
-            When i=3, j=0 to 1 => Print * untill 0<=1 => ** <br>
-            When i=3, j=0 to 0 => Print * untill 0<=0 => * <br>
-            
+                
+
+            Line 1=> When i=0, Print * from a[0] to a[4] , ie untill 0<=(4-0) => ***** <br>
+            Line 2=> When i=1, Print * from a[0] to a[3] , ie untill 0<=(4-1) => **** <br>
+            Line 3=> When i=2, Print * from a[0] to a[2] , ie untill 0<=(4-2) => *** <br>
+            Line 4=> When i=3, Print * from a[0] to a[1] , ie untill 0<=(4-3) => ** <br>
+            Line 5=> When i=3, Print * from a[0] to a[0] , ie untill 0<=(4-4) => * <br>
             </p>
 
         </section>
