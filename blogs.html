@@ -5,68 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Jyothish Pavithran</title>
     <link href="styles.css" rel="stylesheet" />
+    
 </head>
 <body>
-    <nav class="navigation container">
-        <div class="nav-brand"><a href="/">Jyothish Pavithran</a></div>
-        <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link link-active" href="/">Home</a>
+    <div class="navigation">
+        <div class="heading-name"><a href="/">Jyothish Pavithran</a></div>
+        <ul>
+            <li>
+                <a href="/">Home</a>
             </li>
-            <li class="list-item-inline">
-                <a class="link" href="/projects.html">Projects</a>
+            <li>
+                <a href="/projects.html">Projects</a>
             </li>
-            <li class="list-item-inline">
-                <a class="link" href="/blogs.html">Blogs</a>
+            <li>
+                <a href="/blogs.html">Blogs</a>
             </li>
         </ul>
-    </nav>
-    <header class="developer">
-<h1  class="developer-heading">
-    Blogs
-    </h1>
-</header>
-<ul class="list-non-bullet">
-
-    <li>
-        <article class="showcase-list container container-center ">
-            <h1>About me</h1>
-        <small>August, 2020</small>
-        <p> I have been working as a data professional since last 4 years.
-            Web development was something which I was always fascinated about working on. <br><br>I feel web development is 
-            real fun as we are working on something which is live in front whereas working with data involves multiple dependancies
-            with different teams, data and end of the day it is a tiring one. <br><br>I am planning to have a career switch to web development.
-             Neog camp is beautifully crafted
-            to build the knowledge from basics. <br><br>I have come across different courses online but neog content is exceptional.
-            Looking forward to gain good knowledge in levelone.
-        </p>
-
-        <a class="link link-primary" href="./blogs.html">Read More</a>
-        </article>
-        
-    </li>
-
-
-</ul>
     </div>
-</header>
+<div class="container">
 
-    <footer class="footer">
-        <div class="footer-header">Social media presence</div>
-        <ul class="social-links list-non-bullet">
-            <li class="list-item-inline">
-                <a class="link" href="https://github.com/jyothishp994">
-                    Github
+
+    <ul>
+
+        <li>
+            <section class="showcase-blogs">
+                <h1>About me and Why Neogcamp !!</h1>
+            <small>August, 2020</small>
+            <p>  <span class="first-letter">N</span>eog Levelzero is a very well structured and beginner friendly full stack web development course which is handled by industry experts and hence the quality of content is not compromised but ensuring simplicity throughout the content. <br>Kudos to the entire team who works putting up the efforts. I'm planning to have a career switch to web development. Neog camp is beautifully crafted to build the knowledge from basics. I have come across different courses online but neogcamp content is exceptional, because it makes sure the foundation is setup right through levelzero step and only when the assignments are completed by hands-on, post the evaluation and interview , the candidates are taken into second phase, whereas other training courses are more likely to be recorded sessions and it's hard to get up to the speed without foundation is setup right.
+                <br>I'm looking forward to gain good knowledge in levelone if i get a chance to be part of. I'm currently working as a data professional since last 4 years. Web development is something which I was always fascinated working on. I feel web development is real fun as we are working on something which is live in front whereas data is all about the insights that are correlated to other set of data. <br>Having never got a chance to real choose what domain to work on for someone who graduated from tier3 college and having worked in a service based company, Neog camp is very good opportunity to polish your skills and hence get good exposure in full stack web development.
+            </p>
+    
+  
+        </section>
+            
+        </li>
+    
+        <li>
+            <section class="showcase-blogs">
+                <h1>Pattern Printing </h1>
+            <small>August, 2020</small>
+            <p> <span class="first-letter">P</span>attern printing is something which is really interesting irrespective of the programming language.
+                Let's see how we can print the below pattern</p>
+            <table><tr>
+                <td>*</td><td>*</td><td>*</td><td>*</td><td>*</td></tr>
+                <tr> <td>*</td><td>*</td><td>*</td><td>*</td></tr>
+                    <tr> <td>*</td><td>*</td><td>*</td></tr>
+                        <tr><td>*</td><td>*</td></tr>
+                            <tr> <td>*</td></tr></table>
+
+            <p> The best way to think about pattern printing is to put up the required pattern in terms of a two dimensional array 
+             and find out the relation with vertical and horizontal dimension. Let's see below.</p>
+             <table><tr><td>J<sup> i</sup></td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                <tr><td>0</td><td>*</td><td>*</td><td>*</td><td>*</td><td>*</td></tr>
+                <tr><td>1</td> <td>*</td><td>*</td><td>*</td><td>*</td></tr>
+                    <tr><td>2</td> <td>*</td><td>*</td><td>*</td></tr>
+                        <tr><td>3</td><td>*</td><td>*</td></tr>
+                            <tr><td>4</td> <td>*</td></tr></table>
+            <p>
+            Let's consider horizontal index as <b>i</b> and vertical index as <b>j</b>. So we need two loops which are nested. Loop with i to go line by line and Loop with j to print the * at [i][j] position in the matrix.
+            If we look at relation between i and j, it is clear that * needs to be printed untill j<=(n-i) holds true, where n is the length of * in first line. ie here n=4.
+            Let's check for a few iterations. <br>
+            <br>
+            When i=0, j=0 to 4 => Print * untill 0<=4 => ***** <br>
+            When i=1, j=0 to 3 => Print * untill 0<=3 =>  **** <br>
+            When i=2, j=0 to 2 => Print * untill 0<=2 => *** <br>
+            When i=3, j=0 to 1 => Print * untill 0<=1 => ** <br>
+            When i=3, j=0 to 0 => Print * untill 0<=0 => * <br>
+            
+            </p>
+
+        </section>
+            
+        </li>
+    </ul>
+</div>
+    <footer>
+        <div>Social media presence</div>
+        <ul>
+            <li>
+                <a href="https://github.com/jyothishp994">
+                    <img src="./images/github.png" />
                 </a>
             </li>
-            <li class="list-item-inline">
-                <a class="link" href="https://twitter.com/jyothish94">
-                    Twitter
+            <li>
+                <a href="https://twitter.com/jyothish94">
+                    <img src="./images/twitter.png" />
                 </a>
             </li>
-            <li class="list-item-inline">
-                <a class="link" href="https://www.linkedin.com/in/jyothish-pavithran-490b4a107">
-                    Linkedin
+            <li>
+                <a href="https://www.linkedin.com/in/jyothish-pavithran-490b4a107">
+                   <img src="./images/linkedin.png" />
                 </a>
             </li>
             
