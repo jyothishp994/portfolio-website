@@ -14,8 +14,9 @@ margin:0;
     
 }
 header img{
-    width:20rem;
-    padding:3rem;
+    max-width:15rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
 }
 .navigation {
     background-color: var(--green);
