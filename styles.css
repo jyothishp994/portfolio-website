@@ -124,4 +124,6 @@ margin-top:5rem;
     footer ul li{
        display:inline;
     }
-    
+    ul{
+        padding-inline-start: 0;
+    }
