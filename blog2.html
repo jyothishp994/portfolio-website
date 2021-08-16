@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Jyothish Pavithran</title>
+    <link href="styles.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="navigation">
+        <div class="heading-name"><a href="/">Jyothish Pavithran</a></div>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </div>
+<div class="container">
+
+
+    <ul>
+
+  
+        <li>
+            <section class="showcase-blogs-new">
+                <h1>Pattern Printing </h1>
+            <small>August, 2020</small>
+            <p> <span class="first-letter">P</span>attern printing is something which is really interesting irrespective of the programming language.
+                Let's see how we can print the below pattern</p>
+            <table><tr>
+                <td>*</td><td>*</td><td>*</td><td>*</td><td>*</td></tr>
+                <tr> <td>*</td><td>*</td><td>*</td><td>*</td></tr>
+                    <tr> <td>*</td><td>*</td><td>*</td></tr>
+                        <tr><td>*</td><td>*</td></tr>
+                            <tr> <td>*</td></tr></table>
+
+            <p> The best way to think about pattern printing is to put up the required pattern in terms of a two dimensional array 
+             and find out the relation with vertical and horizontal dimension. Let's see below.</p>
+             <table><tr><td>J<sup> i</sup></td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                <tr><td>0</td><td>*</td><td>*</td><td>*</td><td>*</td><td>*</td></tr>
+                <tr><td>1</td> <td>*</td><td>*</td><td>*</td><td>*</td></tr>
+                    <tr><td>2</td> <td>*</td><td>*</td><td>*</td></tr>
+                        <tr><td>3</td><td>*</td><td>*</td></tr>
+                            <tr><td>4</td> <td>*</td></tr></table>
+            <p>
+            Let's consider horizontal index as <b>i</b> and vertical index as <b>j</b>. So we need two loops which are nested. Loop with i to go line by line and Loop with j to print the * at [i][j] position in the matrix.
+            If we look at relation between i and j, it is clear that * needs to be printed untill j<=(n-i) holds true, where n is the length of * in first line. ie here n=4.
+            Let's check for a few iterations. <br>
+            <br>
+            When i=0, j=0 to 4 => Print * untill 0<=4 => ***** <br>
+            When i=1, j=0 to 3 => Print * untill 0<=3 =>  **** <br>
+            When i=2, j=0 to 2 => Print * untill 0<=2 => *** <br>
+            When i=3, j=0 to 1 => Print * untill 0<=1 => ** <br>
+            When i=3, j=0 to 0 => Print * untill 0<=0 => * <br>
+            
+            </p>
+ 
+        </section>
+            
+        </li>
+    </ul>
+</div>
+    <footer>
+        <div>Social media presence</div>
+        <ul>
+            <li>
+                <a href="https://github.com/jyothishp994">
+                    <img src="./images/github.png" />
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/jyothish94">
+                    <img src="./images/twitter.png" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/jyothish-pavithran-490b4a107">
+                   <img src="./images/linkedin.png" />
+                </a>
+            </li>
+            
+        </ul>
+
+<script>
+    function toggle(ele) {
+        var cont = document.getElementById('cont');
+        cont.style.display = cont.style.display == 'none' ? 'block' : 'none';
+    }
+</script>
+    
+</body>
+</html>
