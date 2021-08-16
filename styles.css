@@ -99,22 +99,19 @@ section div p{
 .showcase-blogs p{
    
     line-height: 1.8;
-<<<<<<< Updated upstream
-   width:70%;
-   font-family: 'Inconsolata', monospace;
-=======
     overflow: hidden;
  text-overflow: ellipsis;
  display: -webkit-box;
  -webkit-line-clamp: 3;
  -webkit-box-orient: vertical;
+ font-family: 'Inconsolata';
 
 }
 .showcase-blogs-new p{
     width:50%;
     line-height: 1.8;
     text-align: left;
->>>>>>> Stashed changes
+    font-family: 'Inconsolata';
 
 }
 .first-letter {
