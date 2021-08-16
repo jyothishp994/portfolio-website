@@ -99,6 +99,9 @@ section div p{
 .showcase-blogs p{
    
     line-height: 1.8;
+   width:70%;
+   font-family: 'Inconsolata', monospace;
+
     overflow: hidden;
  text-overflow: ellipsis;
  display: -webkit-box;
@@ -111,7 +114,6 @@ section div p{
     width:50%;
     line-height: 1.8;
     text-align: left;
-    font-family: 'Inconsolata';
 
 }
 .first-letter {
